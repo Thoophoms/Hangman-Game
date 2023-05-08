@@ -1,7 +1,6 @@
 import random
 import hangman_art
 import hangman_words
-from replit import clear
 
 #from hangman_art import logo, stages
 #we can just print(stages)
@@ -22,7 +21,7 @@ already_guessed = []
     
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
-    clear()
+    
 
     if guess not in chosen_word and guess not in already_guessed:
         print(f"{guess} is not in the hangman word")
